@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KrisiAi- Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    
+    
+    <!-- Additional page-specific styles or links can be added here -->
+</head>
+<body>
+    <a href="home.html"><img src="logo.png" alt="KrisiAi Logo" class="logo"></a>
+    <div class="back-button">
+        <a href="home.html">Back</a>
+    </div>
+
+    <main>
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please fill out the form below:</p>
+
+            <form action="process_contact_form.php" method="post">
+                <!-- Replace "process_contact_form.php" with the actual path to your server-side script for handling the form data -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at:</p>
+        <p>Pokhara, Nepal</p>
+        <p>Phone: unknown</p>
+        <p>Email: info@example.com</p>
+    </footer>
+
+</body>
+</html>
