@@ -10,7 +10,7 @@ app = Flask(__name__)
 @ app.route('/')
 def home():
     title = 'Krishi-AI'
-    return render_template('index.html', title=title)
+    return render_template('home.html', title=title)
 
 @ app.route('/crop-recommend')
 def crop_recommend():
@@ -38,10 +38,10 @@ def predict_crop():
     #return str(result)
     return render_template('predict.html', prediction=result )
 
-##for fertilizer recomendation
+#for fertilizer recomendation
 
 @app.route('/predict1.html',methods=['POST'])
-def predict_crop():
+def predict_fertilizer():
     Nitrogen=int(request.form.get('Nitrogen'))
     Phosphorous=int(request.form.get('Phosphorous'))
     Potassium=int(request.form.get('Potassium'))
