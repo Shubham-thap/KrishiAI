@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
     <title>KrisiAi - Crop Predicted Result</title>
-    <!-- <link rel="stylesheet" href="common.css"> -->
     <link rel="stylesheet" href="/static/images/css/prediction.css"> 
-    
-    <!-- Additional page-specific styles or links can be added here -->
 </head>
 <body>
     <a href="/home.html"><img src="/static/images/images/logo.png" alt="KrisiAi Logo" class="logo"></a>
@@ -14,10 +11,11 @@
     </div>
     
     <div class="content">
-        <h1>Predicted crop is:</h1>
-        <div class="result-box">
-            <p class="result-text"><span id="predictedResult"></span></p>
-        </div>
+        <h1>Predicted crop is: {{ value }}</h1>
+        <!-- Uncomment the following lines if needed -->
+        <!-- <div class="result-box">
+            <p class="result-text"><span id="predictedResult">{{prediction}}</span></p>
+        </div> -->
     </div>
 </body>
 </html>
